@@ -1,0 +1,3 @@
+"""
+Items app initialization.
+""" 
