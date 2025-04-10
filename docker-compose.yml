@@ -2,8 +2,9 @@ version: '3.8'
 
 services:
   flask_app:
+    container_name: shubhamsl3final-flask
     build: ./flask_app
-    image: agasya27/flask-app:latest
+    image: shubhamsl3final/flask-app:latest
     ports:
       - "5000:5000"
     volumes:
@@ -18,8 +19,9 @@ services:
     restart: unless-stopped
 
   django_app:
+    container_name: shubhamsl3final-django
     build: ./django_app
-    image: agasya27/django-app:latest
+    image: shubhamsl3final/django-app:latest
     ports:
       - "8000:8000"
     volumes:

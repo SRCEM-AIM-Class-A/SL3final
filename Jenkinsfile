@@ -3,8 +3,8 @@ pipeline {
 
     environment {
         DOCKER_HUB_CREDS = credentials('docker-hub-credentials')
-        FLASK_IMAGE = 'agasya27/flask-app'
-        DJANGO_IMAGE = 'agasya27/django-app'
+        FLASK_IMAGE = 'aman-asses/flask-app'
+        DJANGO_IMAGE = 'aman-asses/django-app'
         // Add path to Docker commands for Windows
         DOCKER_PATH = isUnix() ? '' : 'docker'
         COMPOSE_PATH = isUnix() ? 'docker-compose' : 'docker-compose'
