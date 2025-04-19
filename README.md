@@ -48,7 +48,7 @@ bash
 Copy
 Edit
 git clone https://github.com/SRCEM-AIM-Class-A/ShubhamSL3Final.git
-cd ShubhamSL3Final
+cd ShubhamSL3final
 2. Build & launch the containers
 bash
 Copy
@@ -121,9 +121,9 @@ Serve with a WSGI server (e.g. Gunicorn, uWSGI)
 📦 Docker Hub Images
 You can pull the latest images here:
 
-Flask App: [Docker Hub Flask App URL]
+Flask App: https://hub.docker.com/repository/docker/shubhamtarwani1/flask_app/general
 
-Django App: [Docker Hub Django App URL]
+Django App: https://hub.docker.com/repository/docker/shubhamtarwani1/django_app/general
 
 🤝 Contributing
 Fork this repo
