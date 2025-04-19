@@ -3,8 +3,8 @@ pipeline {
 
     environment {
         DOCKER_HUB_CREDS = credentials('docker-hub-credentials')
-        FLASK_IMAGE = 'aman-asses/flask-app'
-        DJANGO_IMAGE = 'aman-asses/django-app'
+        FLASK_IMAGE = 'SL3final/flask-app'
+        DJANGO_IMAGE = 'SL3final/django-app'
         // Add path to Docker commands for Windows
         DOCKER_PATH = isUnix() ? '' : 'docker'
         COMPOSE_PATH = isUnix() ? 'docker-compose' : 'docker-compose'
@@ -72,7 +72,7 @@ pipeline {
         stage('Push to Docker Hub') {
             steps {
                 script {
-                    withCredentials([usernamePassword(credentialsId: 'docker-hub-credentials', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
+                    withCredentials([usernamePassword(credentialsId: 'shubhamtarwani1', usernameVariable: 'DOCKER_USER', passwordVariable: 'ShubhamTarwani@1155!!')]) {
                         bat(script: "echo %DOCKER_PASS% | ${DOCKER_PATH} login -u %DOCKER_USER% --password-stdin", returnStatus: true)
                         
                         // Push Flask images
